@@ -7,26 +7,65 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h3>Demo public drop info (hover to view)</h3>
+          <h3>Public drop info (hover to view)</h3>
           <div className="list">
-            <DropItem view="public" source="caseItem" />
-            <DropItem view="public" source="upgrade" />
-            <DropItem view="public" source="giveaway" />
-            <DropItem view="public" source="promoCode" />
-            <DropItem view="public" source="exchange" />
+            <DropItem
+              rarity="covert"
+              view="public"
+              source="caseItem"
+              appId="CSGO"
+            />
+            <DropItem
+              rarity="contraband"
+              view="public"
+              source="upgrade"
+            />
+            <DropItem
+              rarity="exotic"
+              view="public"
+              source="giveaway"
+              appId="CSGO"
+            />
+            <DropItem
+              rarity="remarkable"
+              view="public"
+              source="promoCode"
+            />
+            <DropItem
+              view="public"
+              source="exchange"
+            />
           </div>
-          <h3>Demo private controls</h3>
+          <h3>Private controls</h3>
           <div className="list">
-            <DropItem status="active" />
-            <DropItem status="vgoActive" />
-            <DropItem status="vgoAccepted" />
+            <DropItem
+              rarity="industrial-grade"
+              status="active"
+            />
+            <DropItem
+              rarity="extraordinary"
+              status="vgoActive"
+            />
+            <DropItem
+              rarity="high-grade"
+              status="vgoAccepted"
+            />
             <DropItem source="exchange" />
           </div>
-          <h3>Demo private simple statuses</h3>
+          <h3>Private simple statuses</h3>
           <div className="list">
-            <DropItem status="vgoExpire" />
-            <DropItem status="vgoError" />
-            <DropItem status="upgrade" />
+            <DropItem
+              rarity="classified"
+              status="vgoExpire"
+            />
+            <DropItem
+              rarity="mil-spec-grade"
+              status="vgoError"
+            />
+            <DropItem
+              rarity="covert"
+              status="upgrade"
+            />
             <DropItem status="sold" />
             <DropItem status="requested" />
           </div>

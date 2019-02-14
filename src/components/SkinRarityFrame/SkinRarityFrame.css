@@ -1,0 +1,67 @@
+.frameRoot {
+  display: inline-block;
+  padding: 5px;
+  width: 180px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.frameWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 2px solid #8a9da9;
+  border-radius: 5px;
+  padding: 8% 0 0 0;
+  background: #2e2f45;
+  overflow: hidden;
+}
+
+.frame.mil-spec-grade {
+   border-top-color: #4A60F1;
+ }
+
+.frame.high-grade {
+   border-top-color: #4A60F1;
+ }
+
+.frame.industrial-grade {
+   border-top-color: #5E98D9;
+ }
+
+.frame.restricted {
+   border-top-color: #5D3FCC;
+ }
+
+.frame.classified {
+   border-top-color: #AE36CB;
+ }
+
+.frame.exotic {
+   border-top-color: #AE36CB;
+ }
+
+.frame.remarkable {
+   border-top-color: #8747FC;
+ }
+
+.frame.covert {
+   border-top-color: #d10303;
+ }
+
+.frame.contraband  {
+   border-top-color: #efb127;
+ }
+
+.frame.extraordinary {
+   border-top-color: #EA4B4C;
+ }

@@ -1,0 +1,22 @@
+.gameIcon {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  width: 100%;
+  font-size: 10px;
+  text-align: left;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gameIcon .csgo {
+  width: 20%;
+  height: auto;
+  max-width: 42px;
+}
+
+.gameIcon .vgo {
+  width: 15%;
+  max-height: 20px;
+  max-width: 32px;
+}

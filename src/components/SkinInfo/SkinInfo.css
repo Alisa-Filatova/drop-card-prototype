@@ -1,0 +1,38 @@
+.info {
+  position: relative;
+  height: 30%;
+  padding: 0 6% 2%;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: nowrap;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  transition: opacity 0.3s ease-in;
+}
+
+.info > * {
+  flex: 1 1 100%;
+}
+
+.name {
+  font-size: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+.type {
+  color: #79758b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.866em;
+}
+
+.price {
+  font-size: 1.466em;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

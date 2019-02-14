@@ -1,0 +1,14 @@
+.dropInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 5% 0 0 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  background-color: #4b4b6b;
+  color: #fff;
+  text-decoration: none;
+}

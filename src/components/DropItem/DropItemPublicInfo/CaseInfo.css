@@ -1,0 +1,21 @@
+.caseImageWrapper {
+  display: block;
+  height: 45%;
+  margin: 4% auto 6%;
+}
+
+.caseName {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+.casePrice {
+  font-size: 18px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.5;
+}

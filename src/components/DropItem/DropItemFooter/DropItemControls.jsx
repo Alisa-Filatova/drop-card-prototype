@@ -1,21 +1,22 @@
 import React from 'react';
+import './DropItemControls.css';
 
 const DropItemControls = ({ status, source }) => (
   <>
     {status === 'active' && (
       <>
-        <button>Sell</button>
+        <button className="button sell">Sell</button>
         {source !== 'exchange' && (
-          <button>Upgrade</button>
+          <button className="button upgrade">Upgrade</button>
         )}
-        <button>Take</button>
+        <button className="button">Take</button>
       </>
     )}
     {status === 'vgoActive' && (
-      <button>Open Offer</button>
+      <button className="button vgo">Open Offer</button>
     )}
     {status === 'vgoAccepted' && (
-      <button>View</button>
+      <button className="button vgo">View</button>
     )}
   </>
 );
