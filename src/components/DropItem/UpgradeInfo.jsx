@@ -9,7 +9,7 @@ const UpgradeInfo = ({ className }) => (
     />
     <div className="info">
       Upgrade<br/>
-      1000% | 2000x
+      1000% | Multiply 2x
     </div>
   </a>
 );

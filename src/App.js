@@ -7,13 +7,28 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h2>Demo (hover to view)</h2>
+          <h3>Demo public drop info (hover to view)</h3>
           <div className="list">
-            <DropItem source="caseItem" />
-            <DropItem source="upgrade" />
-            <DropItem source="giveaway" />
-            <DropItem source="promoCode" />
+            <DropItem view="public" source="caseItem" />
+            <DropItem view="public" source="upgrade" />
+            <DropItem view="public" source="giveaway" />
+            <DropItem view="public" source="promoCode" />
+            <DropItem view="public" source="exchange" />
+          </div>
+          <h3>Demo private controls</h3>
+          <div className="list">
+            <DropItem status="active" />
+            <DropItem status="vgoActive" />
+            <DropItem status="vgoAccepted" />
             <DropItem source="exchange" />
+          </div>
+          <h3>Demo private simple statuses</h3>
+          <div className="list">
+            <DropItem status="vgoExpire" />
+            <DropItem status="vgoError" />
+            <DropItem status="upgrade" />
+            <DropItem status="sold" />
+            <DropItem status="requested" />
           </div>
         </header>
       </div>

@@ -1,10 +1,13 @@
 import React from 'react';
+import DropIcon from '../DropIcon/DropIcon';
 import CaseInfo from './CaseInfo';
 import UpgradeInfo from './UpgradeInfo';
-import DropInfo from './DropInfo';
+import DropSourceInfo from './DropSourceInfo';
+import DropItemControls from './DropItemControls';
+import DropStatuses from './DropStatuses';
 import './DropItem.css';
 
-const DropItem = ({ source }) => (
+const DropItem = ({ source, status = 'active', view = 'private' }) => (
   <div className="root">
     <div className="wrapper">
       <div className="frame">
@@ -17,10 +20,20 @@ const DropItem = ({ source }) => (
           Skin Name<br/>
           $20.00
         </div>
-        {source === 'caseItem' && <CaseInfo className="dropInfo" />}
-        {source === 'upgrade' && <UpgradeInfo className="dropInfo" />}
-        {source !== 'caseItem' && source !== 'upgrade' && (
-          <DropInfo source={source} className="dropInfo" />
+        {view === 'public' && (
+          <div>
+            {source === 'caseItem' && <CaseInfo className="dropInfo" />}
+            {source === 'upgrade' && <UpgradeInfo className="dropInfo" />}
+            {source !== 'caseItem' && source !== 'upgrade' && (
+              <DropSourceInfo source={source} className="dropInfo" />
+            )}
+          </div>
+        )}
+        {view === 'private' && (
+          <footer className="footer">
+            <DropItemControls status={status} source={source} />
+            <DropStatuses status={status} />
+          </footer>
         )}
         <svg
           className="icon"
@@ -34,6 +47,7 @@ const DropItem = ({ source }) => (
           <path d="M149.42,9.08s.65-6.81-7.78-8.76h-28.2s-8.75,0-8.75,8.76v23s.33,9.4,9.08,9.4h24.31a12.23,12.23,0,0,0,1.94,0v0s9.4-.33,9.4-9.08V17.26H120.91s-.55,5.74,6.55,7.37H140v7.46H115.39v-23Z" fill="#fff"/>
           <path d="M97.56,8.75S98.21,1.94,89.78,0H61.58s-8.75,0-8.75,8.75v7.13s.33,9.4,9.08,9.4h24v7.13h-34s-.65,6.81,7.78,8.75h28.2s8.75,0,8.75-8.75V25.28s-.32-9.4-9.08-9.4h-24V8.75Z" fill="#fff"/>
         </svg>
+        <DropIcon source={source} />
       </div>
     </div>
   </div>
