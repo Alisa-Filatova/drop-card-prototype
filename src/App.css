@@ -38,3 +38,9 @@
     transform: rotate(360deg);
   }
 }
+
+.custom_rarityMask {
+  width: 400px;
+  height: 200px;
+  position: relative;
+}

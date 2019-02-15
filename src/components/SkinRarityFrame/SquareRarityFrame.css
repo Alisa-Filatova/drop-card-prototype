@@ -1,0 +1,20 @@
+.frameRoot {
+  display: inline-block;
+  padding: 5px;
+  width: 180px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.frameRoot.small {
+  width: 140px;
+}
+.frameRoot.large {
+  width: 230px
+}
+
+.frameWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}

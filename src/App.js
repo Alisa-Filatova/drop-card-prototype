@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import DropItem from './components/DropItem/DropItem';
+import SquareRarityFrame from './components/SkinRarityFrame/SquareRarityFrame';
+import CustomRarityMask from './components/SkinRarityFrame/CustomRarityMask';
 import './App.css';
 
 class App extends Component {
@@ -68,6 +70,13 @@ class App extends Component {
             />
             <DropItem status="sold" />
             <DropItem status="requested" />
+          </div>
+          <h3>Rarity frames (sizes) & Mask</h3>
+          <div className="list">
+            <SquareRarityFrame size="large" rarity="covert" />
+            <SquareRarityFrame rarity="high-grade" />
+            <SquareRarityFrame size="small" />
+            <CustomRarityMask className="custom_rarityMask" />
           </div>
         </header>
       </div>

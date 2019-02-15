@@ -1,5 +1,5 @@
 import React from 'react';
-import SkinRarityFrame from '../SkinRarityFrame/SkinRarityFrame';
+import SquareRarityFrame from '../SkinRarityFrame/SquareRarityFrame';
 import SkinInfo from '../SkinInfo/SkinInfo';
 import SkinImage from '../SkinImage/SkinImage';
 import DropIcon from '../DropIcon/DropIcon';
@@ -7,17 +7,21 @@ import DropItemPublicInfo from './DropItemPublicInfo/DropItemPublicInfo';
 import DropItemFooter from './DropItemFooter/DropItemFooter';
 import './DropItem.css';
 
-const DropItem = ({ source, status = 'active', view = 'private', rarity, appId = 'VGO' }) => (
-  <SkinRarityFrame rarity={rarity} appId={appId}>
+const DropItem = ({ size, source, status = 'active', view = 'private', rarity, appId = 'VGO' }) => (
+  <SquareRarityFrame
+    size={size}
+    rarity={rarity}
+    appId={appId}
+  >
     <SkinImage
-      className={view === 'public' ? 'skinImagePublic' : 'skinImagePrivate'}
+      className={view === 'public'
+        ? 'skinImagePublic'
+        : 'skinImagePrivate'
+      }
     />
     <SkinInfo source={source} />
     {view === 'public' && (
-      <DropItemPublicInfo
-        className="dropInfo"
-        source={source}
-      />
+      <DropItemPublicInfo source={source} />
     )}
     {view === 'private' && (
       <DropItemFooter
@@ -26,7 +30,7 @@ const DropItem = ({ source, status = 'active', view = 'private', rarity, appId =
       />
     )}
     <DropIcon source={source} />
-  </SkinRarityFrame>
+  </SquareRarityFrame>
 );
 
 export default DropItem;
