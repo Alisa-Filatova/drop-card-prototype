@@ -1,6 +1,6 @@
 import React from 'react';
-import DropItemControls from './DropItemControls';
-import DropStatuses from './DropStatuses';
+import DropItemControls from './components/DropItemControls/DropItemControls';
+import DropStatuses from './components/DropItemStatuses/DropStatuses';
 import './DropItemFooter.css';
 
 const DropItemFooter = ({ status, source }) => (

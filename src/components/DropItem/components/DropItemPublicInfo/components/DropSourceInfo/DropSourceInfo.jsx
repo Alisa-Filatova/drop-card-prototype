@@ -1,5 +1,5 @@
 import React from 'react';
-import SkinImage from '../../SkinImage/SkinImage';
+import SkinImage from '../../../../../SkinImage/SkinImage';
 import './DropSourceInfo.css';
 
 const DROP_SOURCES = {

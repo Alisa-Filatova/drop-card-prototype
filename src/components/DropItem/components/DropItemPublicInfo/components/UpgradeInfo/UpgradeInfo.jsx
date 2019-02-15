@@ -1,5 +1,5 @@
 import React from 'react';
-import SkinImage from '../../SkinImage/SkinImage';
+import SkinImage from '../../../../../SkinImage/SkinImage';
 import './UpgradeInfo.css';
 
 const UpgradeInfo = ({ className }) => (
