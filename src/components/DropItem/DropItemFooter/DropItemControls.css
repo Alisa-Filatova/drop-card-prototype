@@ -31,16 +31,9 @@
   color: #fff;
 }
 
-.button > svg {
-  margin-top: 2px;
-  margin-right: auto;
-  margin-left: auto !important;
-  min-height: 16px;
-}
-
 .button.vgo {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,10 +45,6 @@
 .button.vgo:focus {
    background-color: #27a6e5;
  }
-
-.button.vgo > * {
-  line-height: 2.8;
-}
 
 .button.sell:hover,
 .button.sell:active,

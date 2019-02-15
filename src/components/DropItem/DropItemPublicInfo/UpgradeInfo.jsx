@@ -8,15 +8,11 @@ const UpgradeInfo = ({ className }) => (
     <div className="upgradeTitle">Upgrade</div>
     <div className="upgradeInfo">
       <div className="infoSide">
-        <div className="infoTotal">
-          0001.5%
-        </div>
+        <div className="infoTotal">0001.5%</div>
         <div>Win %</div>
       </div>
       <div className="infoSide">
-        <div className="infoTotal">
-          100x
-        </div>
+        <div className="infoTotal">100x</div>
         <div>Multiplier</div>
       </div>
     </div>

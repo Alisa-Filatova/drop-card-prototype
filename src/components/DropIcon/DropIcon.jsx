@@ -16,12 +16,12 @@ const DROP_SOURCES = {
 
 const DROP_ICONS = Object.keys(DROP_SOURCES);
 
-const DropIcon = (drop) => (
+const DropIcon = ({ source }) => (
   <>
-    {(DROP_ICONS.indexOf(drop.source) !== -1) && (
+    {(DROP_ICONS.indexOf(source) !== -1) && (
       <img
-        className={`dropIcon ${[drop.source]}`}
-        src={DROP_SOURCES[drop.source].icon}
+        className={`dropIcon ${[source]}`}
+        src={DROP_SOURCES[source].icon}
         alt=""
       />
     )}
