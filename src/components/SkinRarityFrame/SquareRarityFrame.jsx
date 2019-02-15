@@ -1,5 +1,5 @@
 import React from 'react';
-import RarityMask from './CustomRarityMask'
+import RarityMask from './CustomRarityMask';
 import './SquareRarityFrame.css';
 
 const SquareRarityFrame =
